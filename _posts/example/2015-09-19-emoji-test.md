@@ -1,6 +1,8 @@
 ---
 title: Emoji Test
 tags:
+categories:
+- Example
 ---
 
 This is an emoji test. :smile: lol.
