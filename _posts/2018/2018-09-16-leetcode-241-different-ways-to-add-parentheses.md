@@ -7,6 +7,7 @@ categories:
 tags: 
 - LeetCode
 - 分治策略
+- C++
 description: LeetCode上的关于分治策略的练习题
 ---
 

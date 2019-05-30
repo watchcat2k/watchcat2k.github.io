@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: 系统分析与设计作业（四）：用例建模与用例图绘制
-date: 2019-05-21 00:00:00
+date: 2019-05-21 10:00:00
 categories: 
 - SAD-系统分析与设计
 tags: 
@@ -9,6 +9,7 @@ tags:
 - UML
 description: 用例建模与用例图绘制。
 ---
+
 
 # 1. 简答题  {#problem1}
 **1. 用例的概念**            
