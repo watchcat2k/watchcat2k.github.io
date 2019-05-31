@@ -122,8 +122,8 @@ menu:
   about: /about/
   archives: /archives/
   tags: /tags/
-  sitemap: /sitemap.xml
-  commonweal: /404.html
+  #sitemap: /sitemap.xml
+  #commonweal: /404.html
 
 
 # Enable/Disable menu icons.
@@ -743,4 +743,4 @@ wechatpay: /assets/images/wechatpay.png
 alipay: /assets/images/alipay.jpg
 
 # 仓库名
-repository: watchcat2k/jekyll-theme-next
+repository: watchcat2k/watchcat2k.github.io
