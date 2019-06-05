@@ -1,14 +1,14 @@
 ﻿---
 layout: post
 title: 利用github page和jekyll搭建个人博客网站（三）：使用最热门的 Next 主题并进行深度配置
-date: 2019-06-05 15:20:00
+date: 2019-06-05 00:00:00
 categories: 
 - Github-Page博客网站建设
 tags: 
 - Github-Page
 - Jekyll
 - Jekyll-Next-Theme
-description: 在之前的教程中我们利用 github 提供的 github page 服务，已经搭建了一个属于自己的博客网站。但是，我对这个 jekyll 搭建起来的个人博客网站并不是很满意，一个是我对这个 jekyll 主题并不是很中意，第二个是这个主题的功能不是很丰富，所以我决定更换主题。恰好，我找到了一个非常热门并且功能丰富自己又中意的主题：Jekyll-Next-Theme。
+description: 之前我已经搭建了一个属于自己的博客网站，但是，我对这个博客网站的主题并不是很满意，所以我决定更换主题。恰好，我找到了一个非常热门并且功能丰富自己又中意的主题：Jekyll-Next-Theme。
 ---
 
 
