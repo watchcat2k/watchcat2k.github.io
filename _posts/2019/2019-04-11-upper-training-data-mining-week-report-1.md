@@ -138,7 +138,7 @@ sudo pip3 install numpy scipy pandas scikit-learn statsmodels matplotlib xgboost
 
 安装完成后，pip也会自动安装，而且是最新版本。而其它依赖包的安装与ubuntu下的安装方法类似，执行以下命令：
 ```
-sudo pip3 install numpy scipy pandas scikit-learn statsmodels matplotlib jupyter
+pip3 install numpy scipy pandas scikit-learn statsmodels matplotlib jupyter
 ```
 注意，**xgboost**依赖项在window里是不能用上述命令安装的，它的安装方法如下：
 - 前往[https://www.lfd.uci.edu/~gohlke/pythonlibs/#xgboost](https://www.lfd.uci.edu/~gohlke/pythonlibs/#xgboost)，因为我的python版本为3.7，所以下载文件xgboost‑0.82‑cp37‑cp37m‑win32.whl
