@@ -43,7 +43,7 @@ cnpm -v
 
 ![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/1/1.png)
 
-解决办法有两个[^1](https://blog.csdn.net/y_0232/article/details/102555209)：
+解决办法有两个[^1]：
 1. 以管理员身份运行终端
 2. 在终端中执行命令`set-ExecutionPolicy RemoteSigned`
 
