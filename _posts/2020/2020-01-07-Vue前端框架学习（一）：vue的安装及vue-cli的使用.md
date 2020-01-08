@@ -106,6 +106,10 @@ vue create projectName
 
 现在一般都选择history模式。
 
+接下来还要我们选择ESLint标准，我选择了Prettier（译为更美丽的），之后在vscode中，可以直接鼠标右键>源代码操作>“Fix all ESLint auto-fixable problems”使代码规范，如下图：
+
+![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/1/8.png)
+
 最终我的选择如下所示：
 
 ![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/1/5.PNG)
