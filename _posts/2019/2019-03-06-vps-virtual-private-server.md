@@ -45,6 +45,7 @@ VPS虚拟专用服务器与ECS云服务器有些不同。VPS是利用虚拟技�
 设置好密码后，使用我们的VPS服务器操作系统的用户名为`root`，密码为刚刚设置的密码。
 
 ## 安装图形界面  {#install}
+### ubuntu 16.04
 首先在“远程连接”控制台界面使用浏览器进行远程连接，进入命令行式系统，然后再命令行中输入并执行
 
 ```
@@ -65,6 +66,30 @@ xrdp是远程连接时控制图形界面的一个重要工具。
 sudo apt-get install xubuntu-desktop
 ```
 这时的安装时间比较长。（**注意，xubuntu-desktop是仅限于ubuntu系统，如果VPS预装系统是其它的话，请自行查找对应的图形界面**）
+
+### centos 7.3
+centos 7.3图形界面安装教程参考自：[https://www.linuxidc.com/Linux/2018-04/152000.htm](https://www.linuxidc.com/Linux/2018-04/152000.htm)
+
+首先切换到root账号：
+```
+sudo su root
+```
+然后安装X窗口系统，安装过程中都选择“yes”即可：
+```
+yum groupinstall "X Window System"
+```
+然后查看已安装的软件和已安装的软件：
+```
+yum grouplist
+```
+
+![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/1/10-1.png)
+
+根据查看的内容，选择对应名称的图形界面软件，这里安装GNOME图形界面：
+```
+yum groupinstall "GNOME Desktop" "Graphical Administration Tools"
+```
+
 
 ## 使用账号密码远程连接  {#start-connect}
 安装完图形界面后，如果使用浏览器进行远程连接，得到的仍然是命令行式界面，为了能使图形界面生效，我们要使用账号密码方式进行远程连接。
