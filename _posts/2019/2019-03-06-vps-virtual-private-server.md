@@ -70,6 +70,8 @@ sudo apt-get install xubuntu-desktop
 ### centos 7.3
 centos 7.3图形界面安装教程参考自：[https://www.linuxidc.com/Linux/2018-04/152000.htm](https://www.linuxidc.com/Linux/2018-04/152000.htm)
 
+远程连接centos教程参考自：[https://blog.csdn.net/txz317/article/details/51734222](https://blog.csdn.net/txz317/article/details/51734222)
+
 首先切换到root账号：
 ```
 sudo su root
@@ -89,6 +91,24 @@ yum grouplist
 ```
 yum groupinstall "GNOME Desktop" "Graphical Administration Tools"
 ```
+然后，为了能后在win系统上远程连接centos，要安装xrdp：
+```
+yum install xrdp
+```
+再安装tigervnc：
+```
+yum install tigervnc tigervnc-server
+```
+配置SELinux , 否则可能无法启动xrdp服务,或者启动出错：
+```
+chcon -t bin_t /usr/sbin/xrdp
+chcon -t bin_t /usr/sbin/xrdp-sesman
+```
+启动xrdp服务,并设置为开机启动：
+```
+systemctl start xrdp
+systemctl enable xrdp
+```
 
 
 ## 使用账号密码远程连接  {#start-connect}
@@ -98,7 +118,7 @@ yum groupinstall "GNOME Desktop" "Graphical Administration Tools"
 
 ![在这里插入图片描述](https://raw.githubusercontent.com/watchcat2k/watchcat2k.github.io/master/styles/images/blogImage/2019-03/2019-03-06-6.png)
 
-输入个人VPS的公网IP地址，然后输入用户名，即“root”，密码为刚刚设置的密码，即可进入图形界面，如下图所示：
+输入个人VPS的公网IP地址，然后输入用户名，即“root”，密码为刚刚设置的密码，即可进入图形界面（一开始可能会黑屏，等待片刻即可），如下图所示：
 
 ![在这里插入图片描述](https://raw.githubusercontent.com/watchcat2k/watchcat2k.github.io/master/styles/images/blogImage/2019-03/2019-03-06-7.png)
 
