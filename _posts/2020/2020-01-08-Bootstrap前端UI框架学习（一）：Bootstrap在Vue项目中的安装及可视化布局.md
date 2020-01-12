@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Bootstrap前端框架学习（一）：Bootstrap在Vue项目中的安装及可视化布局
+title: Bootstrap前端UI框架学习（一）：Bootstrap在Vue项目中的安装及可视化布局
 date: 2020-01-08 00:00:00
 categories: 
-- Bootstrap-前端框架
+- Bootstrap-前端UI框架
 tags: 
 - Vue
 - Vue-cli
 - Bootstrap
-description: Bootstrap是简洁、直观、强悍的前端开发框架，可以让web开发更迅速、简单。这里主要介绍bootstrap在vue-cli创建的项目中的应用，及bootstrap的在线可视化工具。
+description: Bootstrap是简洁、直观、强悍的前端UI开发框架，可以让web开发更迅速、简单。这里主要介绍bootstrap在vue-cli创建的项目中的应用，及bootstrap的在线可视化工具。
 ---
 
 
@@ -84,7 +84,7 @@ import "bootstrap/dist/js/bootstrap.min";
 完成了bootstrap的安装与引用，接下来便是bootstrap的布局和实现。
 
 我们可以直接用代码手动构建bootstrap布局页面，但这样比较麻烦，推荐使用在线可视化工具：
-- 官方的[在线可视化布局工具Layoutit!](https://www.layoutit.com/)，支持bootstrap4
+- 官方的[在线可视化布局工具Layoutit!](https://www.layoutit.com/build)，支持bootstrap4
 - 还有国内的[中文版在线可视化布局工具](https://www.runoob.com/try/bootstrap/layoutit/)，支持bootstrap3，不支持bootstrap4
 
 利用在线工具可以迅速生成期待的布局，并下载对应的HTML代码，如下图：
