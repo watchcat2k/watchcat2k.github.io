@@ -33,6 +33,10 @@ vue add element
 - 选择覆盖element的scss变量
 - 语言选择中文
 
+# 使用
+使用element-ui进行前端页面开发时，建议参考官方的组件文档：[https://element.eleme.cn/#/zh-CN/component/layout](https://element.eleme.cn/#/zh-CN/component/layout)，文档中给出了所有的组件及对应的代码，开发时只需按照需要复制相应的代码即可。
+
+
 # 可视化编辑
 为了更快地利用element-ui开发前端页面，可以使用在线的可视化编辑器：[MagicalCoder布局器2.2.3](http://lowcode.magicalcoder.com/magicaldrag/index-page.html)，如下图：
 
