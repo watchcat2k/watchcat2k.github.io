@@ -32,7 +32,7 @@ npm run dev
 ```
 
 最终效果：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200111155559996.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MjcyMjgy,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/1/11-1.png)
 
 # 基础模板
 vue-element-admin项目集成了很多可能用不到的功能，会造成不少的代码冗余。所以我们以vue-admin-template为基础模板，通过复制vue-element-admin项目的内容添加到基础模板中，从而实现符合自己需要的后台管理项目。
@@ -53,13 +53,13 @@ npm run dev
 
 最终效果：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200111161042347.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MjcyMjgy,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/1/11-2.png)
 
 # 整合到其它vue项目
 我用vue-cli创建了一个vue项目，现在要把该后台管理系统整合vue项目中，我选择的是用复制的方法复制一个个视图文件。
 
 首先其它vue项目要先安装好element-ui，然后把后台管理系统的视图文件根据自己的需要复制vue项目中，在后台管理系统源码的`src`文件夹下，还有该系统自带的一些图标、脚本文件，如下图：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200112204720680.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MjcyMjgy,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/1/12-3.png)
 
 部分视图文件需要依赖`src/`文件夹里的`icons/`、`utils/`等文件夹里的内容，复制时根据需要复制这些文件夹及内容到其它vue项目中。

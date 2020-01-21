@@ -27,7 +27,7 @@ vue add element
 ```
 安装过程需要选择一些选项，选择结果参照下图：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200112194640891.png)
+![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/1/12-1.png)
 
 - 全局导入element-ui组件
 - 选择覆盖element的scss变量
@@ -40,6 +40,6 @@ vue add element
 # 可视化编辑
 为了更快地利用element-ui开发前端页面，可以使用在线的可视化编辑器：[MagicalCoder布局器2.2.3](http://lowcode.magicalcoder.com/magicaldrag/index-page.html)，如下图：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200112200349997.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MjcyMjgy,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/1/12-2.png)
 
 该工具可以帮助我们快速实现布局和基本页面设计，还提供了调试和样式调整的功能，然后下载对应的HTML代码到自己的项目中。
