@@ -44,7 +44,7 @@ MIDDLEWARE_CLASSES
 )
 ```
 注意注册的顺序！！！，不能把该中间件注册太靠后，不然不起作用，我的顺序如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200201160201686.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MjcyMjgy,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/2/1-1.png)
 
 然后再`setting.py`末尾增加以下内容：
 ```
@@ -61,7 +61,7 @@ CORS_ALLOW_HEADERS = (
 
 # 跨域下的登录保持
 例如，在django后端的登录API中，使用的session来保存用户的登录信息，那么前端成功访问了登录的API后，会在响应头部的`set-cookie `中发现后端设置的`sessionid`，如下图：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200201161100391.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MjcyMjgy,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/2/1-2.png)
 
 正常来说，当我们登录后，若我们进行登陆后的操作，前端必须将这个sessionid放在请求头部里，以让后端能辨别出发出请求的是刚刚登录的用户，这样整个系统才能正常运行。 但是在跨域的情况下，出于安全性的考虑，由于CORS的限制，为了防止出现跨域攻击，前端一般是无法直接获取`Set-Cookie `里的值，为了实现登录的保持，我们需要一些跨域下的解决方案。
 
@@ -78,7 +78,7 @@ CORS_ALLOW_CREDENTIALS = True
 ```
 
 这样的话，当我们登录后，再想要进行其它API的请求是，axios会自动帮我们把登陆时相应头里的`Set-Cookie`的值添加到请求头，如下图： 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200201164046651.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MjcyMjgy,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://gitee.com/watchcat2k/pictures_base/raw/master/2020/2/1-3.png)
 
 这样便能成功将`sessionid`传给后端并保持登录状态。
 

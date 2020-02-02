@@ -67,6 +67,32 @@ export default {
 </script>
 ```
 
+若要将“广东省 广州市 番禺区”换算为代号，可以用以下代码：
+```
+getCityCode(cityText) {
+  var codeArray = [];
+  if (cityText != "") {
+    var cityArray = cityText.trim().split(" ");
+
+    if (cityArray.length == 1) {
+      codeArray.push(TextToCode[cityArray[0]].code);
+    } else if (cityArray.length == 2) {
+      codeArray.push(TextToCode[cityArray[0]].code);
+      codeArray.push(TextToCode[cityArray[0]][cityArray[1]].code);
+    } else if (cityArray.length == 3) {
+      codeArray.push(TextToCode[cityArray[0]].code);
+      codeArray.push(TextToCode[cityArray[0]][cityArray[1]].code);
+      codeArray.push(
+        TextToCode[cityArray[0]][cityArray[1]][cityArray[2]].code
+      );
+    }
+  }
+
+  return codeArray;
+}
+```
+
+
 # 效果
 如下图所示：
 
