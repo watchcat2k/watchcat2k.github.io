@@ -12,8 +12,6 @@ description: 实现Element的upload组件的图片本地预览。
 ---
 
 
-@[TOC]()
-
 
 upload组件的html代码如下：
 ```
